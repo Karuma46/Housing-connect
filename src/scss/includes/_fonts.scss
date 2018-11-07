@@ -1,0 +1,69 @@
+*{
+  font-family: "Source sans Pro", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+%SourceSemi30{
+  font-weight: 500;
+  font-size: 30px;
+}
+
+%SourceLight30{
+  font-weight: 200;
+  font-size: 30px;
+}
+
+%SourceSemi17{
+  font-weight: 600;
+  font-size: 17px;
+}
+
+%SourceReg17{
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+}
+
+%SourceReg14{
+  font-weight: 400;
+  font-size: 14px;
+}
+
+%SourceSemi14{
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.failMessage{
+  color: $red;
+}
+
+.successMessage{
+  color: $green; 
+}

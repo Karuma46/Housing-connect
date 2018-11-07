@@ -1,0 +1,128 @@
+.inputDiv{
+  border-bottom: 1px solid white;
+  font-size: 16px;
+  padding: 10px 0px;
+  margin: 50px 0px;
+  .input1{
+    background: none;
+    border: none;
+    padding: 0px 0px 0px 20px;
+    width:80%;
+    display: inline-block;
+    @extend %SourceSemi17;
+    color: white;
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: rgba(white,0.8) ;
+    }
+  }
+  
+  .label1{
+    width: 10px;
+    display: inline-block;
+    padding: 0px 5px;
+    i{
+      font-size: 17px;
+      color: white;
+    }
+  }
+  
+  button{
+    width: 100%;
+  }
+}
+
+.btn{
+  background-color: $green;
+  color:white;
+  @extend %SourceReg14;
+  border: none;
+  height: 36px;
+  border-radius: 4px;
+  padding: 0px 10px;
+  box-sizing: border-box;
+  margin: 30px 0px;
+  cursor: pointer;
+}
+
+.btn2{
+  background-color: white;
+  color:black;
+  @extend %SourceReg14;
+  border: none;
+  height: 36px;
+  border-radius: 4px;
+  padding: 0px 10px;
+  box-sizing: border-box;
+  margin: 30px 0px;
+  cursor: pointer;
+}
+
+
+
+.input2{
+  background: none;
+  border: none;
+  border-bottom: 1px solid $light;
+  padding: 0px 0px 0px 20px;
+  width:80%;
+  @extend %SourceSemi17;
+  color: $dark;
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $light ;
+  }
+}
+
+.inputDiv-2{
+  display: flex;
+  justify-content:space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 20px 0px;
+  position: relative;
+  input, select, textarea{
+    background: none;
+    border: none;
+    border-bottom: 1px solid $light;
+    margin: 15px 0px;
+    padding: 10px 0px 10px 10px;
+    font-size: 16px;
+    &:focus{
+      border-bottom: 3px solid $green;
+    }
+  }
+  label{
+    display: block;
+    width: 100%;
+    font-weight: 700;
+  }
+  textarea{
+    width: 100%;
+    resize: none;  
+  }
+  .doudble-input{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+    span{
+      display: inline-flex;
+    }
+  }
+
+}
+
+#radio-inputs{
+  margin: 20px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  span{
+    margin-right: 40px;
+    input.radioBtn{
+      width: 20px;
+      display: inline-block;
+      text-align: left;
+    }
+  }
+}

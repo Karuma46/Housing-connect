@@ -1,0 +1,116 @@
+#inbox-wrap{
+  width: 100%;
+  @extend %flex-row-nowrap;
+  justify-content: space-between;
+  height: calc(100vh - 75px);
+  #chats{
+    width: 350px;
+    border-right: 1px solid rgba(0,0,0,0.09);
+    h2{
+      @extend %SourceLight30;
+      text-align: center;
+      color: $green;
+      margin: 20px 0px;
+    }
+    
+    .chat{
+      width: 100%;
+      padding: 10px 15px;
+      box-sizing: border-box;
+      @extend %flex-row-nowrap;
+      justify-content: space-between;
+      position: relative;
+      border-bottom: 1px solid rgba(0,0,0,0.09);
+      margin-bottom: 20px;
+      .chat-avatar{
+        width: 60px;
+        height: 60px;
+        border: 1px solid $light;
+        border-radius: 50%;
+      }
+      .chat-text{
+        position: relative;
+        width: 250px;
+        h3{
+          @extend %SourceSemi17;
+          margin-bottom: 5px;
+        }
+        p{
+          @extend %SourceReg14;
+          line-height: 24px;
+          word-wrap: break-word;
+        }
+        .chat-time{
+          position: absolute;
+          top: 0px; right: 0px;
+        }
+      }
+    }
+  }
+  #listing-context{
+    width: 352px;
+    border-left: 1px solid rgba(0,0,0,0.09);
+    .listings{
+      border: none;
+      margin: 0px;
+    }
+  }
+  
+  #thread{
+    position: fixed;
+    left: 350px;
+    width: calc(100% - 704px);
+    height: calc(100vh - 75px);
+    .threads{
+      width: 100%;
+      padding: 40px 20px;
+      box-sizing: border-box;
+      .sent{
+        span{
+          padding: 10px 20px;
+          background-color: $green;
+          border-radius: 30px;
+          display: inline-block;
+        }
+        color: white;
+        margin: 30px 0px;
+        text-align: right;
+        display: block;
+      }
+      .recieved{
+        span{
+          padding: 10px 20px;
+          background-color: $light;
+          border-radius: 30px;
+          display: inline-block;
+        }
+        color: white;
+        margin: 30px 0px;
+        text-align: left;
+        display: block;
+      }
+    }
+    #chat-input{
+      display: flex;
+      height: 55px;
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      border-top: 1px solid rgba(0,0,0,0.09);
+      button{
+        width: 50px;
+        background: none;
+        border:none;
+      }
+      input{
+        border:none;
+        width: calc(100% - 50px);
+        background: none;
+        padding-left: 20px; 
+        box-sizing: border-box;
+        @extend %SourceReg17;
+        height: 50px;
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+@import 'signup';
+@import 'register';
+@import 'browse';
+@import 'listing';
+@import 'messages';
+@import 'new';
+@import 'account';
+
+
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.wrapper{
+  width: 100%;
+  margin: 0;
+  padding-top: 75px;
+  position: relative;
+}
+
+.wrapper-landing{
+  width: 100%;
+  margin: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+section.cols{
+  margin: 50px auto;
+  padding-top: 50px;
+  position: relative;
+  @extend %flex-row;
+  justify-content: space-around;
+  h2{
+    position: absolute;
+    top: 0px;
+    @extend %SourceLight30;
+    color: $dark;
+  }
+  
+  @media only screen and (max-width: 800px){
+    margin: 20px auto;
+  }
+}
+
+section.cols-4{
+  width: 1456px; 
+  @media only screen and (max-width: 1456px){
+    width: 85%;
+  }
+}
+
+section.cols-3{
+  width: 1100px;
+  .items{
+    width: 352px;
+  }
+  @media only screen and (max-width: 1100px){
+    width: 85%;
+  }
+}
+
+.mobile{
+  display: none;
+}
+
+@media only screen and (max-width:800px){
+  .mobile{
+    display: inline-block;
+  }
+  .desktop{
+    display: none;
+  }
+  
+}

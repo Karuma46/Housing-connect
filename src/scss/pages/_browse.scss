@@ -1,0 +1,181 @@
+.category{
+  height: 100px;
+  width: 252px;
+  background-color: $dark;
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow:hidden; 
+  border-radius: 4px;
+  img{
+    position: absolute;
+    opacity: .6;
+    width: 100%;
+    object-fit: cover;
+  }
+  h3{
+    position: relative;
+  }
+
+  
+
+  @media only screen and (max-width: 800px){
+    width: 47%;
+    height: 150px;
+    margin: 20px 0px;
+    img{
+      width: 100%;
+      height: 155px;
+    }
+  }
+
+  @media only screen and (max-width: 1450px){
+    margin: 20px 0px;
+  }
+
+  @media only screen and (max-width: 576px){
+    width: 90%;
+  }
+
+}
+
+.moveBannerWrap{
+  width: 1456px;
+  margin: 0 auto;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  background-color: $dark;
+  
+  @media only screen and (max-width: 1456px){
+    width: 85%;
+    img{
+      height: 100%; 
+      object-fit: cover;
+    }
+  }
+
+  &:hover{
+    img{
+      filter: blur(3px)
+    }
+    
+  }
+  img {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
+    
+  }
+
+  .mover-text{
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+    h1{
+      font-size: 50px;
+      color: white;
+      font-weight: 100;
+    }
+  }
+}
+
+
+
+.listings{
+  width: 352px;
+  border: 1px solid $light;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  .listing-top{
+    width: 100%;
+    height: 200px;
+    background-color: $dark;
+    position: relative;
+    img{
+      position: relative;
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .feature-icons{
+      color: white;
+      position: absolute;
+      bottom: 10px;
+      font-size: 14px;
+      @extend %flex-row-nowrap;
+      justify-content: space-between;
+      width: 70%;
+      margin: 0px auto;
+      left: 50%;
+      display: none;
+      transform: translateX(-50%);
+      span{
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  
+  .listing-bottom{
+    padding: 30px 20px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #fff;
+    h2{
+      @extend %SourceSemi17;
+      margin-top: 10px;
+    }
+    span.listing-location{
+      font-size: 14px;
+      color: $red;
+      i{
+        font-size: 14px;
+      }
+    }
+    p{
+      margin: 10px 0px;
+      @extend %SourceReg14;
+      line-height: 30px;
+    }
+    .item-actions{
+      color: $dark;
+      display: none;
+      text-align: right;
+      width: 100px;
+      right: 0px;
+      position: absolute;
+      bottom: 20px;
+      span{
+        margin: 0px 10px;
+        cursor: pointer;
+        &:hover{
+          color: $blue;
+        }
+      }
+    }
+    .listing-price{
+      position: absolute;
+      top: 0px; right: 20px;
+      span{
+        font-size: 12px;
+      }
+    }
+    
+    &:hover h2.listingTitle{
+      color: $green;
+    }
+  }
+  &:hover .item-actions{
+    display: block;
+  }
+  
+}

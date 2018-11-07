@@ -1,0 +1,31 @@
+.register-form{
+  margin: 0px auto;
+  width: 600px;
+  text-align: center;
+  padding: 50px 0px;
+  @media only screen and (max-width: 600px){
+    width: 85%;
+  }
+  h1{
+    @extend %SourceLight30;
+    color: $green;
+  }
+  p{
+    @extend %SourceSemi14;
+    color: $light;
+  }
+  
+  form{
+    width: 100%;
+    padding: 30px 0px;
+    margin: 0px auto;
+    input{
+      height: 45px;
+      margin: 20px 0px;
+    }
+    button{
+      width: 82%;
+      margin: 30px 0px;
+    }
+  }
+}
