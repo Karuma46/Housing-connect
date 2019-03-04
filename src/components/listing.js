@@ -27,15 +27,15 @@ class ListingComponent extends Component{
   
   render(){
     return(
-      <div className="items listings" key={this.props.details.listing_id}>
-        <Link to={`/listing/`+this.props.details.listing_id}>
+      <div className="items listings" key={this.props.details.listingId}>
+        <Link to={`/listing/`+this.props.details.listingId}>
         <div className="listing-top">
           <img src={`http://images.housingconnect.co.ke/`+this.state.profileImg.url} alt=""/>
         </div>
         </Link>
         <div className="listing-bottom">
-          <Link to={`/listing/`+this.props.details.listing_id}><h2 className="listingTitle">{this.props.details.title}</h2></Link>
-          <h2 className="listing-price"><span>KES </span>{this.props.details.amount}</h2>
+          <Link to={`/listing/`+this.props.details.listingId}><h2 className="listingTitle">{this.props.details.title}</h2></Link>
+          <h2 className="listing-price"><span>KES </span>{this.props.details.amount > 1000000 ? this.props.details.amount/1000000+'M': this.props.details.amount/1000+'K'}</h2>
           <span className="listing-location"><i className="material-icons">location_on</i> {this.props.details.location}</span>
           
           <p className="desktop">{this.props.details.description}</p>
