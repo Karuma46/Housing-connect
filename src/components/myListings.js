@@ -31,11 +31,11 @@ class MyListings extends Component {
     var user_id = this.getCookie('HOUSING_CONNECT_USER');
     
     //axios.get('http://localhost/housing/userListings/'+user_id)
-    axios.get('http://api.housingconnect.co.ke/userListings/'+user_id)
+    axios.get('http://api.housingconnect.co.ke/savedListings/'+user_id)
     .then(res=>{
       //var data = JSON.parse(res.data);
       this.setState({
-        listings : [...res.data]
+        listings : [...res.data.data]
       })
     });
   }
@@ -49,7 +49,7 @@ class MyListings extends Component {
     
     return(
       <section className="cols cols-3">
-        <h2>My Listings({this.state.listings.length})</h2>
+        <h2>Saved Listings({this.state.listings.length})</h2>
         
         { this.featured }
         

@@ -188,7 +188,7 @@ class Listing extends Component {
             </div>
             
             <div id="listing-pricing">
-              <h2><span>KES  </span>{ this.state.listing.price }</h2>
+              <h2><span>KES  </span>{ this.state.listing.amount > 1000000 ? this.state.listing.amount/1000000+'M': this.state.listing.amount/1000+'K' }</h2>
               <span>{ this.state.listing.payPeriod }</span>
             </div>
           </div>

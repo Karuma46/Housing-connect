@@ -75,7 +75,7 @@ class Browse extends Component {
         
         <Categories />
         
-        <MoveBanner />
+        
 
 
         <section className="cols cols-4">

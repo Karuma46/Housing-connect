@@ -102,9 +102,9 @@ class Me extends Component {
           </div>
           <div id="account-links">
             <ul>
-              <li> <Link to="">My Listings </Link></li>
+              {/* <li> <Link to="">My Listings </Link></li>
               <li> <Link to="">Saved Listings </Link></li>
-              <li><Link to=""> Edit Profile </Link></li>
+              <li><Link to=""> Edit Profile </Link></li> */}
               {/*<li>My Messages(1)</li>*/}
             </ul>
           </div>

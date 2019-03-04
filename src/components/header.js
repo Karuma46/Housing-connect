@@ -90,21 +90,21 @@ class Header extends Component {
     } else {
       this.topRight =
       <span className="rightWrap">
-        <span className="mobile">
+        {/* <span className="mobile">
           <i className="material-icons">add</i>
         </span>
         
         <span className="mobile">
           <i className="material-icons">search</i>
-        </span>
+        </span> */}
         
         {/* <span className="user-avatar" onClick={this.showDropdown}>
           <i className="material-icons">person</i>
         </span> */}
 
         <div className="sign-in-links">
-          <span><Link to="/new">Add a listing</Link></span>
-          <span><Link to="/me">Saved Listings</Link></span>
+          {/* <span><Link to="/new">Add a listing</Link></span>
+          <span><Link to="/me">Saved Listings</Link></span> */}
           <span><Link to="/me">My account</Link></span>
           <span onClick={this.logout} >Logout</span>
         </div>
@@ -122,7 +122,7 @@ class Header extends Component {
               <img src={ Logo } alt=""/>
           </div>
         </Link>  
-          {/*
+          
             
             
           <div className="search-box">
@@ -131,7 +131,7 @@ class Header extends Component {
               <input type="text" value={this.state.searchq} onChange={this.handleSearch} placeholder="Search Locations e.g : 'Thika'"/>
             </form>
           </div>
-          */}
+         
 
         </div>
         
@@ -141,9 +141,9 @@ class Header extends Component {
           
           <div className="drop-menu" id="dropdown">
             <ul>
-              <li><Link to="/new">Add new listing</Link></li>
+              {/* <li><Link to="/new">Add new listing</Link></li> */}
               <li><Link to="/me">My Account</Link></li>
-              <li>Saved Listings</li>
+              {/* <li>Saved Listings</li> */}
               {/*<li><Link to="/inbox">Messages</Link></li>*/}
               <li onClick={this.logout}>Sign out</li>
             </ul>
