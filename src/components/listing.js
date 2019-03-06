@@ -15,7 +15,7 @@ class ListingComponent extends Component{
   
   
   getThumbs = () => {
-    var id = this.props.details.listing_id;
+    var id = this.props.details.listingId;
     //axios.get('http://localhost/housing-media/'+id)
     axios.get('http://images.housingconnect.co.ke/'+id)
     .then(res=>(

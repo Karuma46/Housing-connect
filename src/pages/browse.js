@@ -75,9 +75,6 @@ class Browse extends Component {
         
         <Categories />
         
-        
-
-
         <section className="cols cols-4">
           <h2>Featured Listings</h2>
           
